@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="./images/logo.ico" /> 
     <link rel="stylesheet" href="styles.css">
+    <script src="./scripts.js"></script>
     <title>CyberSport Courses</title>
   </head>
   <body>
@@ -19,6 +20,7 @@
             </div>
         </div>
     </div>
+
     <div id="whoNeed" class="hw-site__block _who-need">
         <div class="hw-site__subtitle">Кому это подойдет?</div>
         <div class="hw-site__container">
@@ -44,6 +46,7 @@
             </div>
         </div>
     </div>
+
     <div id="streams" class="hw-site__block _streams">
         <div class="hw-site__subtitle">Наши направления</div>
         <div class="hw-site__container">
@@ -81,6 +84,7 @@
             </div>
         </div>
     </div>
+
     <div id="teachers" class="hw-site__block _teachers">
         <div class="hw-site__subtitle">Наши учителя</div>
         <div class="hw-site__container _min-height">
@@ -91,6 +95,7 @@
             </div>
             <div class="hw-site__image _mini _right _zeus"></div>
         </div>
+
         <div class="hw-site__container _min-height">
             <div class="hw-site__image _mini _simple"></div>
             <div class="hw-site__text _center">
@@ -99,6 +104,7 @@
                 </span>
             </div>
         </div>
+
         <div class="hw-site__container _min-height">
             <div class="hw-site__text _center">
                 <span>
@@ -107,6 +113,7 @@
             </div>
             <div class="hw-site__image _mini _right _solo"></div>
         </div>
+
         <div class="hw-site__container _min-height">
             <div class="hw-site__image _mini _tip"></div>
             <div class="hw-site__text _center">
@@ -116,17 +123,88 @@
             </div>
         </div>
     </div>
+
     <div id="price" class="hw-site__block _price">
         <div class="hw-site__subtitle">Тарифы</div>
         <div class="hw-site__container">
-            <div class="hw-site__image"></div>
-            <div class="hw-site__text">
+            <div class="hw-site__tarif">
+                <div class="hw-site__tarif-header">Начинающий геймер</div>
+                <div class="hw-site__tarif-body">
+                    <ul>
+                        <li>Доступ к урокам и видеоурокам по основам выбранной игры</li>
+                        <li>Онлайн вебинары с опытными игроками</li>
+                        <li>Отслеживание индивидуального прогресса</li>
+                    </ul>
+                </div>
+                <div class="hw-site__tarif-price">$29.99</div>
+                <div class="hw-site__tarif-button">
+                    <button class="hw-site__button">Оформить</button>
+                </div>
+            </div>
 
+            <div class="hw-site__tarif">
+                <div class="hw-site__tarif-header">Продвинутый игрок</div>
+                <div class="hw-site__tarif-body">
+                    <ul>
+                        <li>Полный доступ ко всем урокам и материалам курса</li>
+                        <li>Персональный тренер для индивидуальной работы над навыками</li>
+                        <li>Доступ к симуляторам игры и аналитике своих матчей</li>
+                    </ul>
+                </div>
+                <div class="hw-site__tarif-price">$79.99</div>
+                <div class="hw-site__tarif-button">
+                    <button class="hw-site__button">Оформить</button>
+                </div>
+            </div>
+
+            <div class="hw-site__tarif">
+                <div class="hw-site__tarif-header">Мастер киберспорта</div>
+                <div class="hw-site__tarif-body">
+                    <ul>
+                        <li>Все возможности "Продвинутого игрока"</li>
+                        <li>Регулярные сессии тренировок в команде top-игроков</li>
+                        <li>Участие в ежемесячных турнирах и эвентах</li>
+                    </ul>
+                </div>
+                <div class="hw-site__tarif-price">$149.99</div>
+                <div class="hw-site__tarif-button">
+                    <button class="hw-site__button">Оформить</button>
+                </div>
+            </div>
+
+            <div class="hw-site__tarif">
+                <div class="hw-site__tarif-header">Профессиональный геймер</div>
+                <div class="hw-site__tarif-body">
+                    <ul>
+                        <li>Все возможности "Продвинутого игрока"</li>
+                        <li>Регулярные сессии тренировок в команде top-игроков</li>
+                        <li>Участие в ежемесячных турнирах и эвентах</li>
+                    </ul>
+                </div>
+                <div class="hw-site__tarif-price">Персональная стоимость</div>
+                <div class="hw-site__tarif-button">
+                    <button class="hw-site__button">Оформить</button>
+                </div>
             </div>
         </div>
     </div>
+
     <div id="contact" class="hw-site__block _contact">
         <div class="hw-site__subtitle">Свяжитесь с нами</div>
+        <div id="formContainer" class="hw-site__container">
+            <div class="hw-site__input-container">
+                <input id="name" class="hw-site__input" type="text" placeholder="Имя" required/>
+            </div>
+            <div class="hw-site__input-container">
+                <input id="phone" class="hw-site__input" type="text" placeholder="Телефон" required/>
+            </div>
+            <div class="hw-site__input-container">
+                <input id="email" class="hw-site__input" type="text" placeholder="Email" required/>
+            </div>
+            <div class="hw-site__input-container _button">
+                <button class="hw-site__button" onclick="submit()">Отправить</button>
+            </div>
+        </div>
     </div>
     <div class="hw-site__footer"></div>
   </body>

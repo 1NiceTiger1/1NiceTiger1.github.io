@@ -80,12 +80,17 @@ body {
     border-radius: 16px;
 }
 
+.hw-site__block._price {
+    background-color: transparent;
+    color: #ffffff;
+}
+
 .hw-site__subtitle {
     align-self: center;
     font-size: 32px;
     font-weight: 800;
     line-height: 36px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .hw-site__container {
@@ -106,28 +111,29 @@ body {
 .hw-site__image._zeus {
     background: url(./images/zeus.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    min-width:
 }
 
 .hw-site__image._solo {
     background: url(./images/solo.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .hw-site__image._simple {
     background: url(./images/simple.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .hw-site__image._tip {
     background: url(./images/tip.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -155,6 +161,8 @@ body {
     align-items: center;
 
     font-size: 24px;
+    line-height: 30px;
+
 }
 
 .hw-site__text._center > span {
@@ -210,6 +218,101 @@ ol > li + li {
     margin-left: 8px;
 }
 
-.hw-site__blocks-container-subtitle {
+.hw-site__block._price > .hw-site__container {
 
+}
+
+.hw-site__button {
+    background-color: #fbff00;
+    cursor: pointer;
+    font-family: 'Tektur', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    padding: 8px;
+}
+
+.hw-site__button:hover {
+    background-color: #fbff00a0;
+}
+
+.hw-site__button:active {
+    background-color: #fbff00f0;
+}
+
+.hw-site__tarif {
+    color:#000000;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hw-site__tarif + .hw-site__tarif {
+    margin-left: 8px;
+}
+
+.hw-site__tarif-header {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.hw-site__tarif-body {
+    font-style: 22px;
+    line-height: 24px;
+}
+
+.hw-site__tarif-price {
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.hw-site__tarif-price,
+.hw-site__tarif-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    justify-self: flex-end;
+}
+
+.hw-site__input {
+    height: 32px;
+    font-size: 24px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: 'Tektur', sans-serif;
+}
+
+.hw-site__block._contact > .hw-site__container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hw-site__input-container + .hw-site__input-container {
+    margin-top: 16px;
+}
+
+.hw-site__input-container._button {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.hw-site__submit-message {
+    font-size: 32px;
+    text-align: center;
+}
+
+.hw-site__footer {
+    height: 200px;
 }
